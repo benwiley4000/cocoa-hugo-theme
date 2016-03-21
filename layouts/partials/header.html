@@ -8,7 +8,7 @@
 <section class="header"> 
     <div class="container">
         <div class="content">
-            <a href="/"><div class="name">{{ .Site.Params.Author }}'s Blog</div></a>
+            <a href="/"><h1 class="name">{{ .Site.Params.Author }}'s Blog</h1></a>
             {{ if and (.Site.Params.RootDomainName) (.Site.Params.RootUrl) }}
                 <a href="{{ .Site.Params.RootUrl }}">&#8617; back to {{ .Site.Params.RootDomainName }}</a>
             {{ end }}
@@ -21,31 +21,31 @@
         <div class="content">
 
         {{ if .Site.Params.GitHub }}
-            <a href="{{ .Site.Params.GitHub }}" target="_blank">
+            <a href="{{ .Site.Params.GitHub }}">
                 <i class="icon ion-social-github"></i>
             </a>
         {{ end }}
         
         {{ if .Site.Params.Twitter }}
-            <a href="{{ .Site.Params.Twitter }}" target="_blank">
+            <a href="{{ .Site.Params.Twitter }}">
                 <i class="icon ion-social-twitter"></i>
             </a>
         {{ end }}
 
         {{ if .Site.Params.LinkedIn }}
-            <a href="{{ .Site.Params.LinkedIn }}" target="_blank">
+            <a href="{{ .Site.Params.LinkedIn }}">
                 <i class="icon ion-social-linkedin"></i>
             </a>
         {{ end }}
 
         {{ if .Site.Params.Facebook }}
-            <a href="{{ .Site.Params.Facebook }}" target="_blank">
+            <a href="{{ .Site.Params.Facebook }}">
                 <i class="icon ion-social-facebook larger"></i>
             </a>
         {{ end }}
 
         {{ if .Site.Params.SoundCloud }}
-            <a href="{{ .Site.Params.SoundCloud }}" target="_blank">
+            <a href="{{ .Site.Params.SoundCloud }}">
                 <i class="icon ion-ios-musical-notes larger"></i>
             </a>
         {{ end }}
