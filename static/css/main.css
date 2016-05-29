@@ -655,6 +655,10 @@ section.main .content .markdown li {
   list-style-type: disc;
   list-style-position: inside;
 }
+section.main .content .markdown ul ul li {
+  list-style-type: circle;
+  padding-left: 1em;
+}
 section.main .content .markdown em {
   font-style: italic;
 }
