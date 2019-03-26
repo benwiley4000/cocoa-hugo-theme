@@ -3,7 +3,7 @@
     <div class="container">
         <div class="content">
             <ul>
-                {{ range .Data.Pages.ByPublishDate }}
+                {{ range .Data.Pages.ByPublishDate.Reverse }}
                 {{ partial "li.html" . }}
                 {{ end }}
             </ul>
